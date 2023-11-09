@@ -38,6 +38,10 @@
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: 'Poppins', sans-serif;
@@ -46,12 +50,26 @@ body {
   line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 address {
   font-style: normal;
 }
 
 ul {
   list-style-type: none;
+}
+
+.section {
+  padding: 48px 0;
 }
 
 .button {
@@ -80,11 +98,16 @@ ul {
 }
 
 /* Hero section */
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font: weight 900px;
+  margin-bottom: 0;
 }
 
 .hero-title .accent {
