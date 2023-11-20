@@ -97,6 +97,7 @@ ul {
   padding: 0 24px;
 }
 
+/* Button */
 .button {
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
@@ -113,6 +114,14 @@ ul {
   font-weight: 600;
 }
 
+/* .button:disabled {
+  color: gray;
+  background-color: lightgrey;
+  border-color: currentColor;
+  cursor: not-allowed;
+} */
+
+/* Link */
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
@@ -575,4 +584,32 @@ ul {
 .form-terms-link {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+ background-color: var(--color-secondary-normal)
+}
+
+.checkbox-label {
+  padding-left: 24px;
+}
+
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  border: solid 1px var(--color-primary-dark);
+  border-radius: 2px;
+  content: ' ';
 }
