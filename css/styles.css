@@ -332,9 +332,12 @@ ul {
 }
 
 .format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 444px;
   padding: 20px;
-  border: 1px solid lightgray; /*  remove */
   border-radius: 16px;
   background: linear-gradient(
     180deg,
@@ -347,6 +350,14 @@ ul {
 
 .format-card:hover {
   transform: scale(1.05);
+}
+
+.format-image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
 }
 
 .formats-title {
@@ -595,7 +606,7 @@ ul {
 }
 
 .checkbox-input:checked + .checkbox-label::before {
- background-color: var(--color-secondary-normal)
+  background-color: var(--color-secondary-normal);
 }
 
 .checkbox-label {
