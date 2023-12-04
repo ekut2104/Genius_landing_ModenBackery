@@ -1,21 +1,10 @@
-
 @import './utils/fonts';
 @import './utils/variables';
 @import './base';
+@import './utils/texts';
 @import './utils/utils';
-
-
-.section {
-  padding: 48px 0;
-}
-
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
+@import './layout/section';
+@import './layout/container';
 @import './components/buttons';
 @import './components/links';
 @import './layout/header';
@@ -23,9 +12,11 @@
 @import './layout/advantages-section';
 @import './layout/traditions-section';
 @import './layout/chefs-section';
+@import './components/chef-card';
 @import './layout/formats-section';
-@import './components/carousel';
+@import './components/format-card';
+@import './components/carousel-button';
 @import './layout/contacts-section';
 @import './layout/footer-section';
-@import './components/modal';
+@import './layout/modal';
 @import './layout/forms';
