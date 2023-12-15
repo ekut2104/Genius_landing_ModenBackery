@@ -1,8 +1,17 @@
 const modal = document.querySelector('.backdrop');
-const modalBtnOpen = document.querySelector('.modal-btn-open');
-const modalBtnClose = document.querySelector('.modal-btn-close');
+
+const modalHeaderBtnOpen = document.querySelector('.modal-header-btn-open');
+const modalHeaderBtnClose = document.querySelector('.modal-header-btn-close');
+
+const modalHeroBtnOpen = document.querySelector('.modal-hero-btn-open');
+const modalHeroBtnClose = document.querySelector('.modal-hero-btn-close');
 
 const toggleModal = () => modal.classList.toggle('is-hidden');
 
-modalBtnOpen.addEventListener('click', toggleModal);
-modalBtnClose.addEventListener('click', toggleModal);
+
+
+modalHeaderBtnOpen.addEventListener('click', toggleModal);
+modalHeaderBtnClose.addEventListener('click', toggleModal);
+
+modalHeroBtnOpen.addEventListener('click', toggleModal);
+modalHeroBtnClose.addEventListener('click', toggleModal);
