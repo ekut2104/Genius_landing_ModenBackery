@@ -65,6 +65,9 @@
   &__logo,
   &__menu {
     flex-grow: 1;
+    &__list {
+      margin-bottom: 18px;
+    }
   }
 
   &__addres-list,
@@ -92,6 +95,7 @@
   }
 
   &__address-copyright {
-    font-style: 14px;
+    font-size: 14px;
+    color: var(--color-secondary-light);
   }
 }

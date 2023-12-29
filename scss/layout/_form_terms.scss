@@ -1,10 +1,15 @@
-.forn-terms {
-  margin: 0 auto;
-  max-width: 220px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
+.form-terms {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+    margin: 0 auto;
+    max-width: 220px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+  }
 
   &__link {
     color: var(--color-primary-dark);
